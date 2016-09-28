@@ -41,4 +41,11 @@ ________________________________________________________________________
 
 DELETE FROM book; #delete all rows from table book
 DELETE FROM book WHERE price < 25.00 #delete rows with condition..
-________________________________________________________________________ 
+________________________________________________________________________
+
+SELECT by DATE:
+SELECT *
+FROM table
+WHERE dt::date = '2011-01-01' -- This should be ISO-8601 format, YYYY-MM-DD
+____________________________________________________________________________
+ 
