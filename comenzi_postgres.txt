@@ -1,0 +1,44 @@
+
+/etc/init.d/postgresql status
+
+sudo -u postgres psql postgres
+
+# \password postgres
+
+Enter new password:
+_______________________________________________________________________
+
+psql database
+optional \x 
+SELECT * FROM database;
+_______________________________________________________________________
+
+CREATE DATABASE name;
+_______________________________________________________________________
+
+CREATE TABLE emp_data (
+name text,
+age integer,
+designation text,
+salary integer
+);
+_______________________________________________________________________
+
+\dt #show the table
+\l  #list databases
+_______________________________________________________________________
+
+DROP TABLE emp_data;
+_______________________________________________________________________
+
+#insert one/multiple rows
+
+INSERT INTO book (book_id, name, price, date_of_publication) VALUES ('HTML01', 'HTML Unleashed', 19.00, '08-07-2010'), ('JS01', 'JavaScript Unleashed', 22.00, '01-05-2010'), ('PHP01', 'PHP Unleashed', 19.00, '01-04-2010');
+________________________________________________________________________
+
+UPDATE table_name SET column_name1 = new_value1, column_name2 = new_value2, column_name3 = new_value3 WHERE some_column_name = existing_value;
+________________________________________________________________________
+
+DELETE FROM book; #delete all rows from table book
+DELETE FROM book WHERE price < 25.00 #delete rows with condition..
+________________________________________________________________________ 
