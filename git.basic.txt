@@ -33,6 +33,28 @@ Push the changes in your local repository to GitHub.
 
 git push origin master
 # Pushes the changes in your local repository up to the remote repository you specified as the origin
+
+-------------------------------------------------------------------------------------------------------------------------
+EXAMPLE
+
+We recommend every repository include a README, LICENSE, and .gitignore.
+
+…or create a new repository on the command line
+
+echo "# Linux" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin git@github.com:mariandina/Linux.git
+git push -u origin master
+
+…or push an existing repository from the command line
+
+git remote add origin git@github.com:mariandina/Linux.git
+git push -u origin master
+
+…or import code from another repository
+You can initialize this repository with code from a Subversion, Mercurial, or TFS project.
 _________________________________________________________________________________________________________________________
 Checking for existing SSH keys
 
